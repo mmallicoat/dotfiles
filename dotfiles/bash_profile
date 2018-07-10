@@ -1,6 +1,9 @@
-# Use colors by default for ls
-alias ls="ls -G"
+# By default for ls, use colors and decorations for directories, exectuables, etc.
+alias ls="ls -GF"
 
 # Add Scripts folder to PATH variable
-PATH=$PATH:$HOME/Documents/Code/Scripts
-export PATH
+# PATH=$PATH:$HOME/Code/Scripts
+# export PATH
+
+# Ignore case for autocompletion (perhaps doesn't work)
+set completion-ignore-case on

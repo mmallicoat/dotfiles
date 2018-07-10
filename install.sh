@@ -10,8 +10,11 @@ for file in $files; do
     # mv any existing file at $HOME/dir/filename to backup
     # create symbolic link at that location to dotfile
     
+    # Must use ABSOLUTE directories, not relative, when linking
+
     # mv $HOME/$dir.$filename $script_dir/bak/$filename
     # ln -fs $script_dir/$file $HOME/$dir.$filename
+    
     
     echo $file
 done
