@@ -1,2 +1,3 @@
-Dotfiles_Backup/*
 .DS_Store
+test/
+backup/

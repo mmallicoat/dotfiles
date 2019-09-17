@@ -19,6 +19,9 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 " Turn on line numbers
 set number
 
+" Turn off error bell
+set belloff=all
+
 " Syntax
 syntax on
 
