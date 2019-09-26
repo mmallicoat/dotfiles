@@ -15,10 +15,5 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Python paths (these are mucked up)
 
 # Add Python bin to path
-PATH=$PATH:$HOME/Library/Python/2.7/bin
-export PATH
-
-# added by Anaconda2 5.2.0 installer
-# This Python location will now take precedence
-export PATH="/Users/user/anaconda2/bin:$PATH"
-
+# PATH=$PATH:$HOME/Library/Python/2.7/bin
+# export PATH
