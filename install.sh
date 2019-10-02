@@ -30,6 +30,6 @@ do
     # Get relative filepath within DOT_DIR
     local_filepath=${file:OFFSET+1}
     # Create symlinks, preserving subdirectories
-    ln -sf $file $LINK_DIR/$local_filepath
+    ln -sFf $file $LINK_DIR/$local_filepath
 done
 
