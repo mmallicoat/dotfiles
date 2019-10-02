@@ -15,20 +15,21 @@ OFFSET=${#SOURCE_DIR}
 # Create subdirectory structure for symlinks
 for dir in $(find $SOURCE_DIR -name "*" -type d)
 do
-    if [ $dir != $SOURCE_DIR ]
-    then
-        # Get all subdirectories of DOT_DIR
-        subdir=${dir:OFFSET+1}
-        # Create subdirectories for symlinks
-        mkdir -p $LINK_DIR/$subdir
-    fi
+#    if [$dir != $SOURCE_DIR ]
+#    then
+        # Get all subdirectories of DOT_DIR
+        subdir=${dir:OFFSET+1}
+        # Create subdirectories for symlinks
+        mkdir -p $LINK_DIR/$subdir
+#    fi
 done
 
 # Create symlinks
 for file in $(find $SOURCE_DIR -name "*" -type f)
 do
-    # Get relative filepath within DOT_DIR
-    local_filepath=${file:OFFSET+1}
-    # Create symlinks, preserving subdirectories
-    ln -sf $file $LINK_DIR/$local_filepath
+    # Get relative filepath within DOT_DIR
+    local_filepath=${file:OFFSET+1}
+    # Create symlinks, preserving subdirectories
+    ln -sf $file $LINK_DIR/$local_filepath
 done
+
