@@ -1,2 +1,0 @@
-# Downloads files to this directory by default, with video title as filename
--o '~/Downloads/Youtube/%(title)s.%(ext)s'
