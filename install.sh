@@ -5,8 +5,7 @@ SCRIPT_DIR="$( cd "$(dirname "$0")" ; pwd -P )"
 # Relative paths from project directory to dotfiles
 DOT_DIR="dotfiles"
 # Absolute path to where to install dotfiles
-# LINK_DIR=$HOME/temp
-LINK_DIR="/Users/user/Code/Dotfiles/test"
+LINK_DIR="$HOME"
 
 # Build absolute path to dotfile source directory
 SOURCE_DIR=$SCRIPT_DIR/$DOT_DIR
@@ -32,4 +31,3 @@ do
     # Create symlinks, preserving subdirectories
     ln -sFf $file $LINK_DIR/$local_filepath
 done
-
