@@ -1,0 +1,37 @@
+# Set some convenient settings
+OPTIONS=autodig,color,fruit:FRUIT,time
+
+# set boulder display
+SYMBOLS=S_boulder:0
+
+# Set random selection
+# OPTIONS=align:random,role:random,race:random,gender:random
+
+# Show XP
+OPTIONS=showexp
+
+# Auto pickup settings
+OPTIONS=autopickup
+# Pickup only gold, scrolls, potions, wands, spellbooks, rings, amulets
+OPTIONS=pickup_types:$?!/+="
+# Warn if picking up would lead to emburdenment
+OPTIONS=pickup_burden:unencumbered
+
+# Set colors in menu
+OPTIONS=menucolors
+MENUCOLOR=" blessed "=green
+MENUCOLOR=" holy "=green
+MENUCOLOR=" cursed "=red
+MENUCOLOR=" unholy "=red
+MENUCOLOR=" cursed .* (being worn)"=orange&underline
+
+# these don't seem to work in my version of the game
+
+# should highlight hp if falls below 30%
+#OPTIONS=statushilites
+#OPTIONS=hilite_status: hitpoints/100%/red/normal
+#OPTIONS=hilite_status: hitpoints/30%/red/normal
+
+# Set colors where HP low, and when PW full
+#OPTIONS=statuscolors
+#STATUSCOLOR=hp%15:red&bold,pw%100=green

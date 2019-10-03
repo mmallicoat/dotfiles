@@ -29,3 +29,28 @@ Done
     This will probably be a bash shell script.
 *   Try running ``install.sh`` on a directory with dotfiles already present. Does it overwrite them appropriately?
 *   Rewrite the ``find`` part of script to find dotfiles.
+
+Some Bash Notes
+---------------
+
+.. code:: bash
+
+    string="some string"
+    sub="thing to find"
+    rep=replacement
+
+    # strips substring from beginning
+    ${string#$sub}
+    
+    # strips substring from end
+    ${string%$sub}
+    
+    # replace first instance of substring
+    ${string/$sub/$rep}
+    
+    # replaces every instance of substring
+    ${string//$sub/$rep}
+
+    # find target of symlink
+    readlink [file]
+
